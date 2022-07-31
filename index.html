@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Title</title>
+    <!-- Required meta tags -->
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, shrink-to-fit=no"
+    />
+    <!-- font awesome -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css"
+      integrity="sha512-1sCRPdkRXhBV2PBLUdRb4tMg1w2YPf37qatUFeS7zlBy7jJI8Lf4VHwWfZZfpXtYSLy85pkm9GaYVYMfw5BC1A=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <!-- Bootstrap CSS v5.2.0-beta1 -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css"
+      integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor"
+      crossorigin="anonymous"
+    />
+  </head>
+
+  <body>
+    <div class="container">
+      <div class="row">
+        <div class="col-md-6">
+          <h3>Các chức năng</h3>
+          <div class="card">
+            <span class="card-header">Các chức năng</span>
+            <div class="card-body">
+              <input
+                class="me-5"
+                type="number"
+                placeholder="Số cần thêm"
+                id="num"
+              />
+              <button class="btn btn-success my-2" id="btnAddNumber">
+                Thêm số
+              </button>
+              <button class="btn btn-danger my-2" id="btnPopNumber">
+                Xuất số
+              </button>
+              <h5>1. Tổng số dương</h5>
+              <button class="btn btn-info my-2" id="btnCalcSum">
+                Tính tổng
+              </button>
+              <div style="border: 1px solid #767676">
+                <i class="fa fa-arrow-right ms-2"></i>
+                <div style="display: inline-block" id="showSum"></div>
+              </div>
+              <h5>2. Đếm số dương</h5>
+              <button class="btn btn-info my-2" id="btnCountPositive">
+                Đếm số dương
+              </button>
+              <div style="border: 1px solid #767676">
+                <i class="fa fa-arrow-right ms-2"></i>
+                <div
+                  style="display: inline-block"
+                  id="showPositiveNumber"
+                ></div>
+              </div>
+              <h5>3. Tìm số nhỏ nhất</h5>
+              <button class="btn btn-info my-2" id="btnFindSmallest">
+                Tìm số nhỏ nhất
+              </button>
+              <div style="border: 1px solid #767676">
+                <i class="fa fa-arrow-right ms-2"></i>
+                <div style="display: inline-block" id="showSmallest"></div>
+              </div>
+              <h5>4. Tìm số dương nhỏ nhất</h5>
+              <button class="btn btn-info my-2" id="btnFindSmallestPositive">
+                Tìm số dương nhỏ nhất
+              </button>
+              <div style="border: 1px solid #767676">
+                <i class="fa fa-arrow-right ms-2"></i>
+                <div
+                  style="display: inline-block"
+                  id="showSmallestPositive"
+                ></div>
+              </div>
+              <h5>5. Tìm số chẵn cuối cùng</h5>
+              <button class="btn btn-info my-2" id="btnFindLastEvenNumber">
+                Tìm số chẵn cuối cùng
+              </button>
+              <div style="border: 1px solid #767676">
+                <i class="fa fa-arrow-right ms-2"></i>
+                <div
+                  style="display: inline-block"
+                  id="showLastEvenNumber"
+                ></div>
+              </div>
+              <h5>6. Đổi chỗ</h5>
+              <input
+                type="number"
+                placeholder="Nhập số vị trí 1"
+                class="form-control"
+                id="num1"
+              />
+              <input
+                type="number"
+                placeholder="Nhập số vị trí 2"
+                class="form-control"
+                id="num2"
+              />
+              <button class="btn btn-info my-2" id="btnSwap">Đổi chỗ</button>
+              <div style="border: 1px solid #767676">
+                <i class="fa fa-arrow-right ms-2"></i>
+                <div style="display: inline-block" id="showSwap"></div>
+              </div>
+              <h5>7. Sắp xếp tăng dần</h5>
+              <button class="btn btn-info my-2" id="btnArrangeNumber">
+                Sắp xếp tăng dần
+              </button>
+              <div style="border: 1px solid #767676">
+                <i class="fa fa-arrow-right ms-2"></i>
+                <div
+                  style="display: inline-block"
+                  id="showAscendingNumber"
+                ></div>
+              </div>
+              <h5>8. Tìm số nguyên tố đầu tiên</h5>
+              <button class="btn btn-info my-2" id="btnPrimeNumber">
+                Tìm số nguyên tố đầu tiên
+              </button>
+              <div style="border: 1px solid #767676">
+                <i class="fa fa-arrow-right ms-2"></i>
+                <div style="display: inline-block" id="showPrimeNumber"></div>
+              </div>
+              <h5>9. Đếm số nguyên</h5>
+              <input
+                class="form-control"
+                type="number"
+                placeholder="Số cần thêm"
+                id="floatNum"
+              />
+              <button class="btn btn-info my-2" id="btnAddFloatNumber">
+                Thêm số
+              </button>
+              <div style="border: 1px solid #767676">
+                <i class="fa fa-arrow-right ms-2"></i>
+                <div style="display: inline-block" id="showFloatNumber"></div>
+              </div>
+              <button class="btn btn-info my-2" id="btnCountIntNumber">
+                Đếm số nguyên
+              </button>
+              <div style="border: 1px solid #767676">
+                <i class="fa fa-arrow-right ms-2"></i>
+                <div style="display: inline-block" id="showIntNumber"></div>
+              </div>
+              <h5>10. So sánh số lượng âm và dương</h5>
+              <button class="btn btn-info my-2" id="btnCompare">So sánh</button>
+              <div style="border: 1px solid #767676">
+                <i class="fa fa-arrow-right ms-2"></i>
+                <div style="display: inline-block" id="showCompare"></div>
+              </div>
+            </div>
+
+            <div class="card-footer" id="showInfo"></div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- Bootstrap JavaScript Libraries -->
+    <script
+      src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.5/dist/umd/popper.min.js"
+      integrity="sha384-Xe+8cL9oJa6tN/veChSP7q+mnSPaj5Bcu9mPX5F5xIGE0DVittaqT5lorf0EI7Vk"
+      crossorigin="anonymous"
+    ></script>
+
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.min.js"
+      integrity="sha384-kjU+l4N0Yf4ZOJErLsIcvOU2qSb74wXpOhqTvwVx3OElZRweTnQ6d31fXEoRD1Jy"
+      crossorigin="anonymous"
+    ></script>
+    <script src="./main.js"></script>
+  </body>
+</html>
